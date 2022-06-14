@@ -1,13 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tailwind.css">
-</head>
-<body>
-    <h1 class="text-red-300 flex justify-center items-center text-4xl">1Click Copy</h1>
-</body>
+<html lang="en" class="bg-[#222126]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Click</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="my-4 text-violet-700 flex justify-center items-center text-4xl">
+        1Click Snippet!
+      </h1>
+      
+      <!--Interactive Tabs-->
+      <div class="mb-4 flex justify-center">
+        <ul
+          class="flex flex-wrap -mb-px text-sm font-medium text-center max-w-md"
+          id="myTab"
+          data-tabs-toggle="#myTabContent"
+          role="tablist"
+        >
+          <li class="mr-2" role="presentation">
+            <button
+              class="inline-block p-4 rounded-t-lg border-b-2"
+              id="profile-tab"
+              data-tabs-target="#profile"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              MCARD UPG
+            </button>
+          </li>
+          <li class="mr-2" role="presentation">
+            <button
+              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="dashboard-tab"
+              data-tabs-target="#dashboard"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Opt-out
+            </button>
+          </li>
+          <li class="mr-2" role="presentation">
+            <button
+              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="settings-tab"
+              data-tabs-target="#settings"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Reset Pass
+            </button>
+          </li>
+          <li role="presentation">
+            <button
+              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="contacts-tab"
+              data-tabs-target="#contacts"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Merge Acc
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div id="myTabContent flex justify-center items-center">
+        <div class="text-center w-lg mx-52 flex justify-center items-center text-gray-400">
+        <div
+          class="hidden p-4 text-center rounded-lg dark:bg-gray-800"
+          id="profile"
+          role="tabpanel"
+        >
+          <p class="text-sm ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.as das as dsa as sa  asa oha;soi ha;osi; sdoio;aas;di haso; s ohs;o h
+          </p>
+        </div>
+        <div
+          class="hidden p-4  rounded-lg dark:bg-gray-800"
+          id="dashboard"
+          role="tabpanel"
+          aria-labelledby="dashboard-tab"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div
+          class="hidden p-4  rounded-lg dark:bg-gray-800"
+          id="settings"
+          role="tabpanel"
+          aria-labelledby="settings-tab"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div
+          class="hidden p-4  rounded-lg dark:bg-gray-800"
+          id="contacts"
+          role="tabpanel"
+          aria-labelledby="contacts-tab"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  </body>
 </html>
