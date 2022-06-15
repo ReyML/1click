@@ -13,112 +13,75 @@
   </head>
   <body>
     <main>
-      <h1 class="my-4 text-violet-700 flex justify-center items-center text-4xl">
-        1Click Snippet!
-      </h1>
-      
       <!--Interactive Tabs-->
       <div class="mb-4 flex justify-center">
         <ul
-          class="flex flex-wrap -mb-px text-sm font-medium text-center max-w-md"
+          class="flex flex-wrap -mb-px text-sm font-medium text-center max-w-lg"
           id="myTab"
           data-tabs-toggle="#myTabContent"
           role="tablist"
         >
-          <li class="mr-2" role="presentation">
+          <li class="mr-1">
             <button
               class="inline-block p-4 rounded-t-lg border-b-2"
-              id="profile-tab"
-              data-tabs-target="#profile"
-              type="button"
+              data-tabs-target="#mcard"
               role="tab"
-              aria-selected="false"
             >
               MCARD UPG
             </button>
           </li>
-          <li class="mr-2" role="presentation">
+          <li class="mr-2">
             <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              id="dashboard-tab"
-              data-tabs-target="#dashboard"
-              type="button"
+              class="inline-block p-4 rounded-t-lg border-b-2"
+              data-tabs-target="#pass"
               role="tab"
-              aria-selected="false"
             >
-              Opt-out
-            </button>
-          </li>
-          <li class="mr-2" role="presentation">
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              id="settings-tab"
-              data-tabs-target="#settings"
-              type="button"
-              role="tab"
-              aria-selected="false"
-            >
-              Reset Pass
-            </button>
-          </li>
-          <li role="presentation">
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              id="contacts-tab"
-              data-tabs-target="#contacts"
-              type="button"
-              role="tab"
-              aria-selected="false"
-            >
-              Merge Acc
+              Pass reset
             </button>
           </li>
         </ul>
       </div>
 
-      
       <div id="myTabContent flex justify-center items-center">
-        <div class="text-center w-lg mx-52 flex justify-center items-center text-gray-400">
         <div
-          class="hidden p-4 text-center rounded-lg dark:bg-gray-800"
-          id="profile"
-          role="tabpanel"
+          class="text-center w-lg mx-52 flex justify-center items-center text-gray-400 text-justify"
         >
-          <p class="text-sm ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.as das as dsa as sa  asa oha;soi ha;osi; sdoio;aas;di haso; s ohs;o h
-          </p>
+          <div class="hidden p-4 text-center rounded-lg" id="mcard">
+            <p class="text-sm p-4 text-[#62626B]">MCA22GOLD</p>
+            <p class="text-sm p-4 text-[#62626B]">MCA22PLAT</p>
+            <p class="text-sm p-4 text-[#62626B]">MCA22TTNM</p>
+            <p class="text-sm p-4 text-[#62626B]">MC UPG to TITANIUM 2022JUN16</p>
+            <p class="text-sm p-4 text-[#62626B] whitespace-pre text-justify">
+              Dear Mr. , 
+              
+              Greetings from GHA DISCOVERY customer care. 
+              Thank you for reaching out to us and requesting the upgrade via the
+              Mastercard promotion. Your request has been reviewed and validated
+              for the upgrade. You may view the changes by logging into your
+              online account at https://www.ghadiscovery.com/member/login On
+              behalf of the entire GHA DISCOVERY team, I extend you a very warm
+              welcome and trust you will have an opportunity to stay with our
+              partner brands in near future. Please let us know if you need any
+              further assistance. 
+              
+              Sincerely, 
+              Your name
+            </p>
+            <p class="text-sm p-4 text-[#62626B] whitespace-pre text-justify">
+              Dear Mr. , 
+              
+              We regret to inform you that your GHA DISCOVERY membership account XXXXXXXXXX​​​​​​​ 
+              does not qualify for the Mastercard promotion, 
+              we would advise you to contact the Mastercard team directly since xxxxxxxxxx xxxxxx       
+              
+              Sincerely, 
+              Your name
+            </p>
+          </div>
+          <div class="hidden p-4 text-center rounded-lg" id="pass">
+            <p class="text-sm p-4 text-[#62626B]">Lorem ipsum dolor</p>
+          </div>
         </div>
-        <div
-          class="hidden p-4  rounded-lg dark:bg-gray-800"
-          id="dashboard"
-          role="tabpanel"
-          aria-labelledby="dashboard-tab"
-        >
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div
-          class="hidden p-4  rounded-lg dark:bg-gray-800"
-          id="settings"
-          role="tabpanel"
-          aria-labelledby="settings-tab"
-        >
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div
-          class="hidden p-4  rounded-lg dark:bg-gray-800"
-          id="contacts"
-          role="tabpanel"
-          aria-labelledby="contacts-tab"
-        >
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
       </div>
     </main>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
