@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-[#222126]">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Click</title>
-    <link rel="stylesheet" href="tailwind.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
-    />
-  </head>
-  <body>
-    <main>
-      <!--Interactive Tabs-->
-      <div class="mb-4 flex justify-center">
-        <ul
-          class="flex flex-wrap text-sm font-medium"
-          id="myTab"
-          data-tabs-toggle="#myTabContent"
-          role="tablist"
-        >
-          <li>
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2"
-              data-tabs-target="#mcard"
-              role="tab"
-            >
-              MCARD UPG
-            </button>
-          </li>
-          <li>
-            <button
-              class="inline-block p-4 rounded-t-lg border-b-2"
-              data-tabs-target="#pass"
-              role="tab"
-            >
-              Pass reset
-            </button>
-          </li>
-        </ul>
-      </div>
 
-      <div id="myTabContent flex">
-        <div
-          class="flex justify-center items-center text-gray-300 "
-        >
-          <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="mcard">
-            <p class="text-sm p-4 mb-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Click</title>
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="mb-4 flex justify-center">
+      <ul class="flex flex-wrap text-sm font-medium" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#mcard" role="tab">
+            MCARD UPG
+          </button>
+        </li>
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#pass" role="tab">
+            Pass reset
+          </button>
+        </li>
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#opt" role="tab">
+            Opt-out
+          </button>
+        </li>
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#amex" role="tab">
+            Amex Upg
+          </button>
+        </li>
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#status" role="tab">
+            Status Match
+          </button>
+        </li>
+        <li>
+          <button class="inline-block p-4 rounded-t-lg border-b-2" data-tabs-target="#grav" role="tab">
+            Gravty
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!--Tab content-->
+    <div id="myTabContent flex">
+      <div class="flex justify-center items-center text-gray-300 ">
+        <!-- Mcard -->
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="mcard">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
             <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22PLAT</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
             <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22TTNM</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
             <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MC UPG to TITANIUM 2022JUN16</p>
-            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">
-              Dear Mr. , 
-              <br/>
-              <br/>
-              Greetings from GHA DISCOVERY customer care. 
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">Dear Mr. ,
+              <br />
+              <br />
+              Greetings from GHA DISCOVERY customer care.
               Thank you for reaching out to us and requesting the upgrade via the
               Mastercard promotion. Your request has been reviewed and validated
               for the upgrade. You may view the changes by logging into your
@@ -63,35 +80,90 @@
               behalf of the entire GHA DISCOVERY team, I extend you a very warm
               welcome and trust you will have an opportunity to stay with our
               partner brands in near future. Please let us know if you need any
-              further assistance. 
-              <br/>
-              <br/>
-              Sincerely, 
-              <br/>
+              further assistance.
+              <br />
+              <br />
+              Sincerely,
+              <br />
               Your name
             </p>
-            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">
-              Dear Mr. , 
-              <br/>
-              <br/>
-              We regret to inform you that your GHA DISCOVERY membership account XXXXXXXXXX​​​​​​​ 
-              does not qualify for the Mastercard promotion, 
-              we would advise you to contact the Mastercard team directly since xxxxxxxxxx xxxxxx       
-              <br/>
-              <br/>
-              Sincerely, 
-              <br/>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">Dear Mr. ,
+              <br />
+              <br />
+              Greetings from GHA DISCOVERY customer care.
+              Thank you for reaching out to us and requesting the upgrade via the
+              Mastercard promotion. Your request has been reviewed and validated
+              for the upgrade. You may view the changes by logging into your
+              online account at https://www.ghadiscovery.com/member/login On
+              behalf of the entire GHA DISCOVERY team, I extend you a very warm
+              welcome and trust you will have an opportunity to stay with our
+              partner brands in near future. Please let us know if you need any
+              further assistance.
+              <br />
+              <br />
+              Sincerely,
+              <br />
               Your name
             </p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">Dear Mr. ,
+              <br />
+              <br />
+              We regret to inform you that your GHA DISCOVERY membership account XXXXXXXXXX​​​​​​​
+              does not qualify for the Mastercard promotion,
+              we would advise you to contact the Mastercard team directly since xxxxxxxxxx xxxxxx
+              <br />
+              <br />
+              Sincerely,
+              <br />
+              Your name
+            </p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
           </div>
 
-          <!--Another Tab-->
-          <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="pass">
-            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MC UPG to TITANIUM 2022JUN16</p>
+        </div>
+
+        <!--Pass reset-->
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="pass">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+        </div>
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="opt">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+        </div>
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="amex">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+        </div>
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="status">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
+          </div>
+        </div>
+        <div class=" rounded-lg mx-10 md:mx-36 lg:mx-72" id="grav">
+          <div class="text-sm pr-2 mb-1 rounded-lg bg-[#292A2D] flex justify-between">
+            <p class="text-sm p-4 my-1 rounded-lg bg-[#292A2D]">MCA22GOLD</p>
+            <button class="active:scale-125 hover:text-indigo-200 duration-150 text-indigo-300 rounded-lg px-2 py-1">Copy</button>
           </div>
         </div>
       </div>
-    </main>
-    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
